@@ -26,7 +26,9 @@ function App() {
                 conditionText: res.data.current.condition.text,
                 icon: res.data.current.condition.icon
               })
+              setCity("");
             })
+            .catch(err => alert("エラーが発生しました。ページをリロードして、もう一度トライしてください。"));
     }
   return (
     <div className="test">
